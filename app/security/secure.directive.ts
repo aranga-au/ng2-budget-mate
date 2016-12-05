@@ -16,6 +16,7 @@ export class SecureDirective implements  AfterViewInit{
          console.log(this.elementRef);
     }
     onRightsUpdate(rights :IRights):void{
+        console.log(this.routerLinke.href);
         console.log(rights);
     }
 }
