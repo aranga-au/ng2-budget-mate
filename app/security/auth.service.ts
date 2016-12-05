@@ -5,7 +5,7 @@ import { IRights } from './rights';
 export class AuthService{
     public rightsUpdateEvent$ = new EventEmitter<IRights>();
 
-    public update():void{
-           this.rightsUpdateEvent$.emit({id:1});
+    public update(role:string[]):void{
+           this.rightsUpdateEvent$.emit({id:1,permissions:role});
     }
 }

@@ -6,11 +6,13 @@ import { AuthService } from '../security/auth.service';
 })
 export class HomeComponent{
     
+    username:string="hello";
+
     constructor(private authService:AuthService){
 
     }
     onClick():void{
-        this.authService.update();
-        console.log('hellooo');
+        this.authService.update([this.username]);
+        console.log('hellooo'+this.username);
     }
 }
