@@ -16,6 +16,6 @@ export class SecureDirective implements  AfterViewInit{
          console.log(this.elementRef);
     }
     onRightsUpdate(rights :IRights):void{
-
+        console.log(rights);
     }
 }
